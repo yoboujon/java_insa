@@ -3,14 +3,9 @@ import partie3.Voiture;
 public class exercice3part1 {
     public static void main(String[] argv)
     {
-        Voiture volkswagen = new Voiture();
-        volkswagen.puissance = 30;
-        volkswagen.vitesse = 0;
+        Voiture volkswagen = new Voiture(30);
         volkswagen.estDemarre = false;
-        Voiture renault = new Voiture();
-        renault.puissance = 500;
-        renault.vitesse = 200;
-        renault.estDemarre = true;
+        Voiture renault = new Voiture(500,true);
 
         System.out.println(renault.puissance);
         System.out.println(renault.vitesse);
