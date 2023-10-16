@@ -12,10 +12,16 @@ public class exercice3part4 {
         voiture2.demarre(100);
 
         // Affiche le nom et les stats des voitures créées
+        for(int i=0; i<Voiture34.getListeVoitures2().size(); i++)
+        {
+            printVoiture(Voiture34.getListeVoitures2().get(i));
+        }
+        /*
         for(int i=0; i<Voiture34.getNbVoitures() ; i++)
         {
             printVoiture(Voiture34.getListeVoitures()[i]);
         }
+        */
     }
 
     public static void printVoiture(Voiture34 v) {

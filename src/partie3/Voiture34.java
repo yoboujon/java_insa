@@ -1,4 +1,5 @@
 package partie3;
+import java.util.ArrayList;
 
 public class Voiture34 {
     int puissance = 10;
@@ -8,9 +9,11 @@ public class Voiture34 {
     // Variables statiques, accessibles partout
     private static int nbVoitures = 0;
     private static Voiture34[] listeVoitures = new Voiture34[10];
+    private static ArrayList<Voiture34> listeVoitures2 = new ArrayList<Voiture34>();
 
     public Voiture34() {
-        listeVoitures[nbVoitures] = this;
+        //listeVoitures[nbVoitures] = this;
+        listeVoitures2.add(this);
         nbVoitures++;
     }
 
@@ -33,6 +36,10 @@ public class Voiture34 {
 
     public static Voiture34[] getListeVoitures() {
         return listeVoitures;
+    }
+
+    public static ArrayList<Voiture34> getListeVoitures2() {
+        return listeVoitures2;
     }
 
     public String getNom(){
