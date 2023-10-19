@@ -1,12 +1,14 @@
 package partie4;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Voiture {
     int puissance = 10;
     double vitesse = 0;
     boolean estDemarre = false;
     String nom;
+    Date dateCreation;
 
     private static ArrayList<Voiture> listeVoitures = new ArrayList<Voiture>();
 
@@ -33,6 +35,10 @@ public class Voiture {
 
     public boolean isDemarre() {
         return this.estDemarre;
+    }
+
+    public Date getDate() {
+        return this.dateCreation;
     }
 
     public void setPuissance(int p) {
@@ -63,5 +69,10 @@ public class Voiture {
         } else {
             System.out.println("La vitesse(" + v + ") est supérieure à la puissance(" + this.puissance + ").");
         }
+    }
+
+    public void setDate(Date d)
+    {
+        this.dateCreation = d;
     }
 }
